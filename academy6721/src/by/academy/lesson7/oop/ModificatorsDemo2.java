@@ -1,5 +1,7 @@
 package by.academy.lesson7.oop;
 
+import by.academy.lesson7.oop.test.Modificators;
+
 public class ModificatorsDemo2 {
 	public static void main(String[] args) {
 		Modificators object = new Modificators();

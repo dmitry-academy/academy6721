@@ -1,6 +1,7 @@
 package by.academy.lesson7.oop;
 
 public class D extends C {
+	
 	public String i;
 
 	public D(String a, int b) {
@@ -8,6 +9,7 @@ public class D extends C {
 		super.i = b;
 	}
 
+	@Override
 	public void print() {
 		System.out.println("D.i = " + i);
 		super.print();

@@ -6,6 +6,8 @@ public class DifferentBoxDemo2 {
 		Box heavyBox = new HeavyBox(15, 10, 20, 5);
 		Box redBox = new ColorBox(25, 12, 20, "красный");
 
+		((HeavyBox) heavyBox).printSomething();
+
 		ColorBox blueBox = new ColorBox(25, 12, 20, "голубой");
 
 		System.out.println("Ширина коробки: " + box.width);

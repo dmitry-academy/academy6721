@@ -14,6 +14,10 @@ public class HeavyBox extends Box {
 		this.weight = weight;
 	}
 
+	public void printSomething() {
+		System.out.println("Something!");
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
