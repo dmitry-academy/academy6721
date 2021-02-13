@@ -7,4 +7,11 @@ public class Book implements Printable {
 		System.out.println("Book!");
 	}
 
+	public static void printBook(Printable[] printable) {
+		for (Printable o : printable) {
+			if (o instanceof Book) {
+				o.print();
+			}
+		}
+	}
 }

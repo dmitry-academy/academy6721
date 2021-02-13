@@ -13,6 +13,14 @@ public class PrintableDemo {
 		Printable m2 = new Magazine();
 
 		Printable[] arr = { b, b1, b2, b3, m, m1, m2 };
-		Magazine.printMagazine(arr);
+
+//		for (Printable p : arr) {
+//			p.print();
+//		}
+
+//		Magazine.printMagazine(arr);
+		
+		Book.printBook(arr);
+
 	}
 }

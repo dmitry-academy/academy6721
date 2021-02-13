@@ -1,6 +1,6 @@
 package by.academy.lesson7.oop.classwork.deal;
 
-public class Product {
+public abstract class Product {
 
 	protected double price;
 	protected String type;
@@ -51,11 +51,10 @@ public class Product {
 		this.quantity = quantity;
 	}
 
-	public Double discount() {
-		if (quantity > 20) {
-			return 0.9;
-		}
-		return 1.0;
+	public abstract double discount();
+	
+	public double calcFinalPrice() {
+		return quantity * price * discount();
 	}
 
 	@Override

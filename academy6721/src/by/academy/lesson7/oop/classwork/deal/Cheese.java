@@ -14,10 +14,11 @@ public final class Cheese extends Product {
 
 	public void setAge(Integer age) {
 		this.age = age;
+		final int a = 1;
 	}
 
 	@Override
-	public Double discount() {
+	public double discount() {
 		if (age > 20) {
 			return 0.83;
 		}

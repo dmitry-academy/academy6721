@@ -17,7 +17,7 @@ public class Wine extends Product {
 	}
 
 	@Override
-	public Double discount() {
+	public double discount() {
 		if (country.equals("Georgia")) {
 			return 0.8;
 		}

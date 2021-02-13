@@ -80,7 +80,7 @@ public class Deal {
 
 		for (Product tmp : products) {
 			if (tmp != null) {
-				double d = tmp.getPrice() * tmp.getQuantity() * tmp.discount();
+				double d = tmp.calcTotalPrice();
 
 				if (tmp instanceof Milk) {
 					System.out.print("Milk: ");

@@ -21,5 +21,7 @@ public class LocalDateDemo2 {
 		System.out.println("День в году: " + dayYear);
 		System.out.println("День месяца: " + dayMonth);
 		System.out.println("День недели: " + dayWeekEnum);
+		System.out.println("День недели(number): " + dayWeekEnum.getValue());
+
 	}
 }
