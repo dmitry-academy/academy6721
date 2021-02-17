@@ -5,6 +5,7 @@ import java.time.temporal.ChronoUnit;
 
 public class PlusMinusLocalDateDemo {
 	public static void main(String[] args) {
+
 		LocalDate newYear2001 = LocalDate.of(2001, 1, 1);
 		LocalDate newYear2005 = newYear2001.plusYears(4);
 		LocalDate march2001 = newYear2001.plusMonths(2);
@@ -29,5 +30,12 @@ public class PlusMinusLocalDateDemo {
 		System.out.println("dec30Year2000: " + dec30Year2000);
 		System.out.println("lastWeekDec2001: " + lastWeekDec2001);
 		System.out.println("newYear1999: " + newYear1999);
+
+		LocalDate test = LocalDate.of(1970, 1, 1);
+		test = test.plusYears(30);
+		test = test.minusMonths(7);
+		test = test.minusDays(3);
+		System.out.println(test);
+
 	}
 }

@@ -8,6 +8,7 @@ public class GenArrays {
 		GenericSub<?>[] gens = new GenericSub<?>[10];
 		gens[0] = new GenericSub<Integer>(34);
 		gens[1] = new GenericSub<Double>(34.0);
+		gens[2] = new GenericSub<String>("asd");
 
 	}
 }

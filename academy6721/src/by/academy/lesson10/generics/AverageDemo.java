@@ -5,6 +5,12 @@ public class AverageDemo {
 
 		Integer[] intArray = { 1, 2, 3, 4, 5 };
 		Average<Integer> integerAverage = new Average<>(intArray);
+
+		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
+		Average<Double> doubleAverage1 = new Average<>(doubleArray); 
+		
+		System.out.println(integerAverage.sameAvg(doubleAverage1));
+
 // 		Нельзя!
 //		String[] strArray = { "asd", "lalalala" };
 //		Average<String> strAverage = new Average<>(strArray);
@@ -19,7 +25,6 @@ public class AverageDemo {
 		// потому что String не является наследником Number
 //		String[] strArray = { "1", "2", "3", "4", "5" };
 //		Average<String> strAverage = new Average<>(strArray);
-//
 //		System.out.println("Среднее значения для String " + strAverage.average());
 	}
 }

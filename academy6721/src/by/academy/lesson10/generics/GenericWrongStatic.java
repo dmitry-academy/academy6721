@@ -11,7 +11,12 @@ public class GenericWrongStatic<T> {
 	// }
 
 	// Но объявить статические обобщенные методы со своими параметрами типа можно
+
 	public static <V> void getOb(V v) {
+		System.out.println(v);
+	}
+
+	public <V extends CharSequence> void getTest(V v) {
 		System.out.println(v);
 	}
 }
