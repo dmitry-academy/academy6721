@@ -17,9 +17,9 @@ public class AverageDemo {
 
 		System.out.println("Среднее значения для Integer " + integerAverage.average());
 
-		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
-		Average<Double> doubleAverage = new Average<>(doubleArray);
-		System.out.println("Среднее значения для Double " + doubleAverage.average());
+//		Double[] doubleArray = { 1.1, 2.2, 3.3, 4.4, 5.5 };
+//		Average<Double> doubleAverage = new Average<>(doubleArray);
+//		System.out.println("Среднее значения для Double " + doubleAverage.average());
 
 		// Не откомпилируется,
 		// потому что String не является наследником Number
