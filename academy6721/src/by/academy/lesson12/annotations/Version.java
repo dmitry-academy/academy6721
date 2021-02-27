@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 @Target({ ElementType.TYPE, ElementType.METHOD, ElementType.FIELD })
 @Inherited
 public @interface Version {
-	String info();
+	String info() default "1.0";
 
 	int minArgs() default 0;
 

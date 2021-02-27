@@ -9,16 +9,21 @@ public class User {
 		this.password = password;
 	}
 
-	public void createQuery() {
-		 class Query {
-			public void printToLog() {
-				System.out.println("User  - " + User.this.login);
-			}
-		}
-		Query q = new Query();
-		q.printToLog();
+	public static class Query {
+		User user;
 
+		public Query(User user) {
+			this.user = user;
+		}
+
+		public void printToLog() {
+			System.out.println("User  - " + user.login);
+		}
 	}
 
-	
+	public void createQuery() {
+		Query q = new Query(this);
+		q.printToLog();
+	}
+
 }

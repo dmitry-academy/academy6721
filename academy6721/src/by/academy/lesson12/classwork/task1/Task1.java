@@ -16,9 +16,10 @@ public class Task1 {
 //	2.	Переписать предыдущее задание, используя локальный класс. 
 
 	public static void main(String[] args) {
-		
-		User user = new User("User", "123456");
-		user.createQuery();
 
+		User user = new User("User", "123456");
+
+		User.Query q = new User.Query(user);
+		q.printToLog();
 	}
 }

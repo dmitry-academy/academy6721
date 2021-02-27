@@ -20,6 +20,7 @@ public class NoGenericBox<T> {
 		return array;
 	}
 
+	
 	public void setArray(T[] array) {
 		this.array = array;
 	}
@@ -28,8 +29,8 @@ public class NoGenericBox<T> {
 		System.out.println("polojili item");
 	}
 
-	public T takeItem() {
+	public T takeItem(int i) {
 		System.out.println("dostali item");
-		return null;
+		return array[i];
 	}
 }
