@@ -35,7 +35,7 @@ public class Task1 {
 			throw new WrongLoginException("Lenght: " + login.length());
 		}
 		Matcher m = p.matcher(password);
-		if (password.length() < 1 || password.length() > 20 || !m.find() || !password.equals(confirmPassword)) {
+		if (password.length() < 1 || password.length() > 20 || !m.matches() || !password.equals(confirmPassword)) {
 			throw new WrongPasswordException("Wrong password: " + password);
 		}
 	}
