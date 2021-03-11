@@ -11,6 +11,11 @@ public class FileCopy {
 	public static final String OUTPUT_FILE_PATH = "src\\io\\copied_file.txt";
 
 	public static void main(String[] args) throws IOException {
+		File dir = new File("src/io/");
+
+		if (!dir.exists()) {
+			dir.mkdirs();
+		}
 
 		File inputFile = new File(INPUT_FILE_PATH);
 		if (!inputFile.exists()) {
