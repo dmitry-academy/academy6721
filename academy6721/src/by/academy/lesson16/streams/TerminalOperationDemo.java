@@ -113,6 +113,7 @@ public class TerminalOperationDemo {
 		// Позволяет выполнять агрегатные функции на всей коллекцией и возвращать один
 		// результат
 		// collection.stream().reduce((s1, s2) -> s1 + s2).orElse(0)
+		System.out.println(intList);
 		System.out.println("reduce: ");
 		System.out.println(intList.stream().reduce((s1, s2) -> s1 + s2).orElse(0));
 		System.out.println();

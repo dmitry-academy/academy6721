@@ -16,7 +16,6 @@ public class ReflectionInvokeExample {
 			getHorsepowerMethod = carClass.getMethod("getHorsepower");
 			Object resultValue = getHorsepowerMethod.invoke(car);
 			System.out.println(resultValue);
-
 			Method setHorsepowerMethod = carClass.getDeclaredMethod("setHorsepower", int.class);
 			setHorsepowerMethod.setAccessible(true);
 			System.out.println("Before change: " + car.getHorsepower());

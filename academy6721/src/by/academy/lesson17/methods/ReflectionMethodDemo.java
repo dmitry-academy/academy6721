@@ -6,7 +6,6 @@ import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
 import by.academy.lesson17.Car;
-
 import jdk.jfr.Description;
 
 public class ReflectionMethodDemo {
@@ -37,6 +36,7 @@ public class ReflectionMethodDemo {
 			System.out.println("Return types(logAndReturn): ");
 			System.out.println(logAndReturnMethod.getReturnType());
 			System.out.println(logAndReturnMethod.getGenericReturnType());
+			System.out.println("----------------");
 
 			Annotation[] annotations = getHorsepowerMethod.getAnnotations();
 			System.out.println(Arrays.toString(annotations));

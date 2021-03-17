@@ -7,16 +7,16 @@ public class ReflectionFieldsDemo {
 	public static void main(String[] args) {
 		Class<Car> carClass = Car.class;
 // 		example 1
-//		System.out.println("example 1");
-//		Field[] declaredFields = carClass.getDeclaredFields();
-//
-//		for (Field field : declaredFields) {
-//			System.out.println(field);
-//		}
+		System.out.println("example 1");
+		Field[] declaredFields = carClass.getDeclaredFields();
+
+		for (Field field : declaredFields) {
+			System.out.println(field);
+		}
 
 // 		example 2
-		System.out.println("example 2");
-
+//		System.out.println("example 2");
+//
 //		try {
 //			Field horsepowerField = carClass.getDeclaredField("horsepower");
 //			System.out.println(horsepowerField);
@@ -26,7 +26,6 @@ public class ReflectionFieldsDemo {
 //		}
 //
 //// 		example 3
-//
 ////  	getFields() only public
 //		System.out.println("example 3");
 

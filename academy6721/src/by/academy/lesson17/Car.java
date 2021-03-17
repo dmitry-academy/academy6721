@@ -2,11 +2,11 @@ package by.academy.lesson17;
 
 import jdk.jfr.Description;
 
-public class Car {
+public class Car extends Vehicle {
 
 	@Description("the power of an engine")
 	private int horsepower;
-	public final String serialNumber;
+	private final String serialNumber;
 
 	public Car() {
 		serialNumber = "";

@@ -9,9 +9,10 @@ public class ReflectionFieldDemo {
 
 		Car car = new Car(500, "1233");
 		Class<? extends Car> carClass = Car.class;
+
 		// Example 1
 		try {
-			Field serialNumberField = carClass.getDeclaredField("serialNumber");
+			Field serialNumberField = carClass.getDeclaredField("horsePower");
 			String serialNumberValue = (String) serialNumberField.get(car);
 			System.out.println(serialNumberValue); // output: 1233
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {

@@ -13,6 +13,7 @@ public class ReflectionAnnotationDemo {
 		Class<? extends Car> carClass = car.getClass();
 		try {
 			Field horsepowerField = carClass.getDeclaredField("horsepower");
+
 			Annotation[] annotations = horsepowerField.getAnnotations();
 			System.out.println(Arrays.toString(annotations));
 
